@@ -1,4 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
 from math import dist
 import os
 import os.path as osp
