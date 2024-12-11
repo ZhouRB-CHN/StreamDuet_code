@@ -90,7 +90,6 @@ class Region:
         return Region(self.fid, self.x, self.y, self.w, self.h, self.conf,
                       self.label, self.resolution, self.origin)
     def calc_iou(self,region1, region2):
-        # 计算IoU
         x1_min = region1.x
         y1_min = region1.y
         x1_max = region1.x + region1.w
@@ -101,7 +100,6 @@ class Region:
         x2_max = region2.x + region2.w
         y2_max = region2.y + region2.h
 
-        # 计算交集矩形的边界
         inter_x_min = max(x1_min, x2_min)
         inter_y_min = max(y1_min, y2_min)
         inter_x_max = min(x1_max, x2_max)
