@@ -63,8 +63,6 @@ class Region:
         return string_rep
 
     def is_same(self, region_to_check, threshold=0.5):
-        # If the fids or labels are different
-        # then not the same
         if (self.fid != region_to_check.fid or
                 ((self.label != "-1" and region_to_check.label != "-1") and
                  (self.label != region_to_check.label))):
